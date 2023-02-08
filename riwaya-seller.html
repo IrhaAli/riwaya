@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styling applied to all */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            position: relative;
+            height: 9138px;
+            background: #FFFFFF;
+        }
+
+        /* Styling applied to landing image */
+        #th-bri-seller {
+            background-image: url("./images/background/Bg.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            width: 100%;
+            height: 750px;
+            font-size: 30px;
+            text-align: start;
+            padding: 0 100px;
+        }
+
+        #th-bri-seller h1 {
+            width: 745px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 86px;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+
+        #th-bri-seller p {
+            width: 429.71px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .heroBtn {
+            width: 203.6px;
+            height: 65px;
+            left: 0px;
+            top: 370px;
+            border: none;
+            font-weight: bold;
+            padding: 16px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            background: linear-gradient(90deg, #b36c1a 6.11%, #e8c35b 52.57%, #b36c1a 100%);
+            color: #FFFFFF;
+            border-radius: 7px;
+        }
+
+        /* Styling applied to Trusted by Amazing brands Worldwide */
+        .trusted-brands {
+            position: absolute;
+            width: 100%;
+            height: 349px;
+            left: 0;
+            top: 783px;
+            background: #FAFAFA;
+        }
+
+        .trusted-brands .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 24px;
+            position: absolute;
+            width: 100%;
+            height: 231px;
+        }
+
+        .trusted-brands .container p {
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #111827;
+        }
+
+        .trusted-brands .container .image-brands {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
+            gap: 32px;
+            width: 1229px;
+            height: 167px;
+            flex-wrap: wrap;
+        }
+
+        /* Who are we section start */
+        .intro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 100px;
+            position: absolute;
+            width: 1248px;
+            height: 2536.93px;
+            left: 150px;
+            top: 1138px;
+        }
+
+        .who-are-we {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 100%;
+            height: 484.96px;
+        }
+
+        .who-are-we .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .who-are-we .content .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            gap: 197px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .who-are-we .content .container .image-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            gap: 57px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .who-are-we .content .container .image-text .image {
+            width: 511.07px;
+            height: 484.96px;
+        }
+
+        .who-are-we .content .container .image-text .image .one {
+            position: absolute;
+            width: 423.59px;
+            height: 396.04px;
+            left: 0px;
+            top: 48.59px;
+            border-radius: 20px;
+        }
+
+        .who-are-we .content .container .image-text .image .two {
+            position: absolute;
+            width: 350px;
+            height: 310px;
+            left: 60px;
+            top: 100px;
+            background-color: #DBDBDB;
+            border-radius: 20px;
+        }
+
+        .who-are-we .content .container .image-text .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            gap: 32px;
+            width: 672.35px;
+            height: 352px;
+        }
+
+        .who-are-we .content .container .image-text .text .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            gap: 10px;
+            width: 246px;
+            height: 40px;
+        }
+
+        .who-are-we .content .container .image-text .text .heading h4 {
+            width: 400px;
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #111827;
+        }
+
+        .who-are-we .content .container .image-text .text .heading p {
+            width: 672.35px;
+            height: 280px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: justify;
+            letter-spacing: 0.04em;
+            color: #6B7280;
+            opacity: 0.6;
+        }
+
+        /* Why sell with us */
+        .why-sell-us {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 100%;
+            height: 484.96px;
+        }
+
+        .why-sell-us .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .why-sell-us .content .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            gap: 197px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .why-sell-us .content .container .image-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            gap: 57px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .why-sell-us .content .container .image-text .image {
+            width: 511.07px;
+            height: 484.96px;
+        }
+
+        .why-sell-us .content .container .image-text .image .one {
+            position: absolute;
+            width: 423.59px;
+            height: 396.04px;
+            right: 0px;
+            top: 628.59px;
+            border-radius: 20px;
+        }
+
+        .why-sell-us .content .container .image-text .image .two {
+            position: absolute;
+            width: 350px;
+            height: 310px;
+            right: 60px;
+            top: 680px;
+            background-color: #DBDBDB;
+            border-radius: 20px;
+        }
+
+        .why-sell-us .content .container .image-text .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            gap: 32px;
+            width: 672.35px;
+            height: 352px;
+        }
+
+        .why-sell-us .content .container .image-text .text .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            gap: 10px;
+            width: 246px;
+            height: 40px;
+        }
+
+        .why-sell-us .content .container .image-text .text .heading h4 {
+            width: 400px;
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #111827;
+        }
+
+        .why-sell-us .content .container .image-text .text .heading p {
+            width: 672.35px;
+            height: 280px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: justify;
+            letter-spacing: 0.04em;
+            color: #6B7280;
+            opacity: 0.6;
+        }
+
+        /* Who are we section end */
+
+        /* Our amazing seller start*/
+        .our-amazing-seller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 50px;
+            width: 1248px;
+            height: 587px;
+        }
+
+        .our-amazing-seller .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 1248px;
+            height: 489px;
+        }
+
+        .our-amazing-seller .container .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 20px;
+            width: 480px;
+            height: 56px;
+        }
+
+        .our-amazing-seller .container .heading h4 {
+            width: 480px;
+            height: 56px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            text-align: center;
+            letter-spacing: -0.02;
+            text-transform: capitalize;
+            color: #23262F;
+        }
+
+        .our-amazing-seller .container .boxes {
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            gap: 16px;
+            width: 1248px;
+            height: 401px;
+        }
+
+        .our-amazing-seller .container .boxes .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 85px 32px;
+            gap: 32px;
+            width: 300px;
+            height: 401px;
+            border-radius: 20px;
+            background: #FCFCFD;
+        }
+
+        .our-amazing-seller .container .boxes img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .our-amazing-seller .container .boxes .box .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 16px;
+            width: 269px;
+            height: 112px;
+        }
+
+        .our-amazing-seller .container .boxes .box .text h4 {
+            width: 185px;
+            height: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #23262F;
+        }
+
+        .our-amazing-seller .container .boxes .box .text p {
+            width: 293px;
+            height: 72px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #777E91;
+        }
+
+        /* Our amazing seller end*/
+
+        /* For Online Retailer */
+        .for-on-ret {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 100%;
+            height: 484.96px;
+        }
+
+        .for-on-ret .content {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            gap: 32px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .for-on-ret .content .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            gap: 197px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .for-on-ret .content .container .image-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            gap: 57px;
+            width: 1240px;
+            height: 484.96px;
+        }
+
+        .for-on-ret .content .container .image-text .image {
+            width: 511.07px;
+            height: 484.96px;
+        }
+
+        .for-on-ret .content .container .image-text .image .one {
+            position: absolute;
+            width: 423.59px;
+            height: 396.04px;
+            right: 60px;
+            top: 1998.59px;
+            border-radius: 20px;
+        }
+
+        .for-on-ret .content .container .image-text .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            gap: 32px;
+            width: 672.35px;
+            height: 352px;
+        }
+
+        .for-on-ret .content .container .image-text .text .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            gap: 10px;
+            width: 246px;
+            height: 40px;
+        }
+
+        .for-on-ret .content .container .image-text .text .heading h4 {
+            width: 400px;
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #111827;
+        }
+
+        .for-on-ret .content .container .image-text .text .heading p {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 577.59px;
+            height: 91px;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 80px rgba(95, 95, 95, 0.1);
+            border-radius: 10px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            color: #262524;
+        }
+
+        /* Styling applied to content right above signup and sell immediately */
+        .above-sell-immed {
+            margin-top: 10000px;
+        }
+
+        .above-sell-immed .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .above-sell-immed .container .image-brands {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+        }
+
+        /* Styling applied to Sign up Today and Start Selling Immediately! */
+        .signup-today {
+            padding-top: 20px;
+            width: 100%;
+            height: 349px;
+            background: #FAFAFA;
+            margin-top: 10000px;
+        }
+
+        .signup-today .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 24px;
+            width: 100%;
+            height: 231px;
+        }
+
+        .signup-today .container p {
+            height: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+
+        .signup-today .container .image-brands {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
+            gap: 32px;
+            width: 1229px;
+            height: 167px;
+            flex-wrap: wrap;
+        }
+
+        .signup-today .container .image-brands .reasons img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-today .container .image-brands .reasons h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: normal;
+        }
+
+        /* FAQs Styling */
+        .faqs {
+            padding-top: 20px;
+            margin-top: 200px;
+            width: 100%;
+        }
+
+        .faqs .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .faqs .container .questions {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        .faqs .container .questions details {
+            border-top: 1px solid #aaa;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .faqs .container .questions details summary {
+            padding: .5em 1.3rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            transition: height 1s ease;
+        }
+
+        .faqs .container .questions details div {
+            font-size: 12px;
+            color: #969696;
+        }
+
+        .faqs .container .questions summary:after {
+            content: "\002B";
+        }
+
+        .faqs .container .questions details[open] div {
+            padding-left: 1.75em;
+        }
+
+        /* Our Reviews Styling */
+        .all-reviews {
+            padding-top: 20px;
+            margin-top: 200px;
+            padding-bottom: 300px;
+            width: 100%;
+        }
+
+        .all-reviews .border {
+            margin: 0 auto;
+            display: block;
+            width: 55px;
+            border-bottom: 6px solid #E8C35B;
+            margin-bottom: 10px;
+        }
+
+        .all-reviews .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .all-reviews .container .review {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-evenly;
+        }
+
+        .all-reviews .container .review .a-review {
+            border-width: 5px;
+            box-shadow: 47px 36px 64px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+
+        }
+
+        .all-reviews .container .review .a-review p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #969696;
+        }
+
+        .all-reviews .container .review .a-review h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        /* Media Query */
+        @media only screen and (width: 1024px) {
+            #th-bri-seller {
+                width: 1024px;
+                height: 783px;
+            }
+
+            #th-bri-seller p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 34px;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.65);
+            }
+
+            .trusted-brands {
+                width: 803px;
+                left: 119px;
+                top: 850px;
+            }
+
+            .trusted-brands .container {
+                width: 800px;
+            }
+
+            .trusted-brands .container p {
+                width: fit-content;
+            }
+
+            .trusted-brands .container .image-brands {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0;
+                gap: 32px;
+                width: 800px;
+                height: 167px;
+            }
+
+            .intro-container {
+                width: 766px;
+                left: 128px;
+            }
+
+            .who-are-we {
+                height: 537.96px;
+            }
+
+            .who-are-we .content {
+                padding: 0;
+                gap: 32px;
+                width: 1024px;
+                height: 484.96px;
+            }
+
+            .who-are-we .content .container {
+                width: 770px;
+            }
+
+            .who-are-we .content .container .image-text {
+                display: flex;
+                flex-direction: column;
+                width: 770px;
+            }
+
+            .who-are-we .content .container .image-text .image .one {
+                width: 280.59px;
+                height: 254.48px;
+                left: 249px;
+                top: 2.5900000000000034px;
+            }
+
+            .who-are-we .content .container .image-text .image .two {
+                width: 210px;
+                height: 186px;
+                left: 249px;
+                top: 54px;
+            }
+
+            .who-are-we .content .container .image-text .text {
+                overflow: scroll;
+            }
+
+            .who-are-we .content .container .image-text .text .heading {
+                width: 246px;
+                height: 40px;
+            }
+
+            .why-sell-us {
+                height: 537.96px;
+            }
+
+            .why-sell-us .content {
+                padding: 0;
+                gap: 32px;
+                width: 1024px;
+                height: 484.96px;
+            }
+
+            .why-sell-us .content .container {
+                width: 770px;
+            }
+
+            .why-sell-us .content .container .image-text {
+                display: flex;
+                flex-direction: column;
+                width: 770px;
+            }
+
+            .why-sell-us .content .container .image-text .image .one {
+                width: 280.59px;
+                height: 254.48px;
+                left: 249px;
+                top: 2.5900000000000034px;
+            }
+
+            .why-sell-us .content .container .image-text .image .two {
+                width: 210px;
+                height: 186px;
+                left: 249px;
+                top: 54px;
+            }
+
+            .why-sell-us .content .container .image-text .text {
+                overflow: scroll;
+            }
+
+            .why-sell-us .content .container .image-text .text .heading {
+                width: 246px;
+                height: 40px;
+            }
+
+            .our-amazing-seller {
+                width: 1024px;
+            }
+
+            .our-amazing-seller .container {
+                width: 1024px;
+            }
+
+            .our-amazing-seller .container .boxes {
+                display: flex;
+                flex-direction: column;
+                width: 318px;
+            }
+
+            .our-amazing-seller .container .boxes .box .text h4 {
+                font-size: 20px;
+                width: 350px;
+            }
+
+            .our-amazing-seller .container .boxes .box .text p {
+                font-size: 18px;
+                padding: 0 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #th-bri-seller {
+                width: fit-content;
+                height: 783px;
+                font-size: 30px;
+                text-align: start;
+                padding: 0 100px;
+            }
+
+            #th-bri-seller p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.65);
+            }
+
+            .trusted-brands {
+                height: 349px;
+                width: 803px;
+                left: 70px;
+                top: 850px;
+                background: #FAFAFA;
+            }
+
+            .trusted-brands .container {
+                width: 800px;
+                height: 231px;
+            }
+
+            .trusted-brands .container p {
+                width: fit-content;
+            }
+
+            .trusted-brands .container .image-brands {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 800px;
+                height: 167px;
+            }
+
+            .intro-container {
+                width: 768px;
+                left: 94px;
+            }
+
+            .for-on-ret .content .container .image-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .who-are-we {
+                height: 537.96px;
+            }
+
+            .who-are-we .content {
+                width: 768px;
+            }
+
+            .who-are-we .content .container {
+                width: 770px;
+            }
+
+            .who-are-we .content .container .image-text {
+                display: flex;
+                flex-direction: column;
+                width: 770px;
+            }
+
+            .who-are-we .content .container .image-text .image .one {
+                width: 280.59px;
+                height: 254.48px;
+                left: 249px;
+                top: 2.5900000000000034px;
+            }
+
+            .who-are-we .content .container .image-text .image .two {
+                width: 210px;
+                height: 186px;
+                left: 249px;
+                top: 54px;
+            }
+
+            .who-are-we .content .container .image-text .text {
+                overflow: scroll;
+            }
+
+            .who-are-we .content .container .image-text .text .heading {
+                width: 246px;
+                height: 40px;
+            }
+
+            .above-sell-immed .container .image-brands {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .why-sell-us {
+                height: 537.96px;
+            }
+
+            .why-sell-us .content {
+                width: 768px;
+            }
+
+            .why-sell-us .content .container {
+                width: 770px;
+            }
+
+            .why-sell-us .content .container .image-text {
+                display: flex;
+                flex-direction: column;
+                width: 770px;
+            }
+
+            .why-sell-us .content .container .image-text .image .one {
+                width: 280.59px;
+                height: 254.48px;
+                left: 249px;
+                top: 2.5900000000000034px;
+            }
+
+            .why-sell-us .content .container .image-text .image .two {
+                width: 210px;
+                height: 186px;
+                left: 249px;
+                top: 54px;
+            }
+
+            .why-sell-us .content .container .image-text .text {
+                overflow: scroll;
+            }
+
+            .why-sell-us .content .container .image-text .text .heading {
+                width: 246px;
+                height: 40px;
+            }
+
+            .our-amazing-seller {
+                width: 768px;
+            }
+
+            .our-amazing-seller .container {
+                width: 768px;
+            }
+
+            .our-amazing-seller .container .boxes {
+                display: flex;
+                flex-direction: column;
+                width: 318px;
+            }
+
+            .our-amazing-seller .container .boxes .box .text h4 {
+                font-size: 18px;
+            }
+
+            .our-amazing-seller .container .boxes .box .text p {
+                font-size: 16px;
+                padding: 0 18px;
+            }
+
+            .signup-today .container .image-brands {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .all-reviews .container .review {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* font face */
+        @font-face {
+            font-family: 'Poppins';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Poppins Italic'), local('Poppins-Italic'), url(https://fonts.gstatic.com/s/poppins/v9/pxiGyp8kv8JHgFVrJJLucHtA.woff2) format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'), url(https://fonts.gstatic.com/s/poppins/v9/pxiDyp8kv8JHgFVrJJLmy15VF9eO.woff2) format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+        }
+    </style>
+</head>
+
+<body>
+    <section class="landing-page">
+        <!-- Landing image Aya-->
+        <div id="th-bri-seller">
+            <h1>
+                Finding your target <br> market has never <br> been easier
+            </h1>
+            <br>
+            <p>No listing fees, subscription costs or hidden charges. <br>
+                Just a commission when you sell something
+            </p>
+            <a href="#"
+                style="display: block; font-family: Poppins, sans-serif; font-size: 12px; margin-top:30px;text-transform: uppercase; text-decoration: none;">
+                <button style="text-transform: uppercase;" class="heroBtn"> Start for free</button>
+            </a>
+        </div>
+
+        <!-- Trusted brands Aya-->
+        <div class="trusted-brands">
+            <div class="container">
+                <div>
+                    <p>Trusted by amazing brands worldwide</p>
+                </div>
+                <div class="image-brands">
+                    <img width="120" height="86" src="./images/background/1 (1) 1.png">
+                    <img width="130" height="94" src="./images/background/1 (1) 2.png">
+                    <img width="100" height="132.12" src="./images/background/Mask group.png">
+                    <img width="120" height="120" src="./images/background/image 19.png">
+                    <img width="200" height="130" src="./images/background/3 1.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-container">
+            <!-- Who are we Aya-->
+            <div class="who-are-we">
+                <div class="content">
+                    <div class="container">
+                        <div class="image-text">
+                            <div class="image">
+                                <img class="two" src="/images/background/Rectangle 355.png" alt="gray backround">
+                                <img class="one" src="./images/background/Rectangle 356.png" alt="honey">
+                            </div>
+                            <div class="text">
+                                <div class="heading">
+                                    <h4>Who are we?</h4>
+                                    <p>
+                                        Downyourhighstreet.co.uk is the modern high street, a mixture of physical
+                                        and online independent businesses providing an online destination for bricks and
+                                        mortar shops to gain an online
+                                        presence and for existing online stores to reach new customers.
+                                        We are a shopping website and marketplace where people can buy goods direct from
+                                        Great British independent
+                                        retailers like boutiques, independent shops and online stores, all in one place.
+                                        If you want to reach people shopping for unique gifts, high-quality products and
+                                        items that come
+                                        from actual UK businesses then being part of our community is right for your
+                                        business.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why sell with us Irha-->
+            <div class="why-sell-us">
+                <div class="content">
+                    <div class="container">
+                        <div class="image-text">
+                            <div class="text">
+                                <div class="heading">
+                                    <h4>Why sell with us?</h4>
+                                    <p>
+                                        We aim to be the UK's largest indepenent retailer hub
+                                    </p>
+                                    <p>
+                                        By choosing to sell through DownYourHighStreet, you join a fast-growing
+                                        community of independent retailers coming together to build the UK's largest
+                                        independent retailer hub.
+                                        We combine the ease and variety of a marketplace like Amazon with the
+                                        personal
+                                        feel and service of your local high street shop and put your business in
+                                        front
+                                        of thousands of new customers who are willing to spend more to support
+                                        independent businesses.
+                                        For smaller online sellers struggling to display on Google, being part of a
+                                        more
+                                        visible marketplace such as DownYourHighStreet means you benefit from our
+                                        online
+                                        and multimedia marketing prowess resulting in more customers and more sales.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img class="two" src="/images/background/Rectangle 355.png" alt="gray backround">
+                                <img class="one" src="./images/background/Rectangle 356 copy.png" alt="honey" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our amazing sellers Aya-->
+            <div class="our-amazing-seller">
+                <div class="container">
+                    <div class="heading">
+                        <h4>Our Amazing Sellers</h4>
+                    </div>
+                    <div class="boxes">
+                        <div class="box-content">
+                            <div class="box">
+                                <img src="./images/background/icon.png" alt="user icon">
+                                <div class="text">
+                                    <h4>Target new customers</h4>
+                                    <p>
+                                        Open your business to thousands of high-quality customers
+                                        looking to support independent businesses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box">
+                                <img src="./images/background/Frame 755.png" alt="user icon">
+                                <div class="text">
+                                    <h4>Amazing features </h4>
+                                    <p>
+                                        Get your business seen by thousands more customers than is possible on your
+                                        website alone.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box">
+                                <img src="./images/background/Frame 755.png" alt="user icon">
+                                <div class="text">
+                                    <h4>Amazing features </h4>
+                                    <p>
+                                        Get your business seen by thousands more customers than is possible on your
+                                        website alone.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="box">
+                                <img src="./images/background/Frame 755-2.png" alt="user icon">
+                                <div class="text">
+                                    <h4>Community</h4>
+                                    <p>
+                                        For all sales you make Riwaya donates a % to charity
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--For Online Retailer Irha-->
+            <div class="for-on-ret">
+                <div class="content">
+                    <div class="container">
+                        <div class="image-text">
+                            <div class="text">
+                                <div class="heading">
+                                    <h4>For Online Retailers</h4>
+                                    <p>Open Your Business</p>
+                                    <p>Ship Worldwide</p>
+                                    <p>Only 5% Commission</p>
+                                    <p>Offer Klarna, Stripe, Paypal and others to your customer</p>
+                                    <p>Free access to Riwaya wide marketing</p>
+                                    <p>Own Mini-Store</p>
+
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img class="one" src="/images/background/Rectangle 356 copy 2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Above signup and sell immediately Irha-->
+        <div class="above-sell-immed">
+            <div class="container">
+                <div class="image-brands">
+                    <img src="./images/background/image 21.png" alt="user-icon">
+                    <img src="./images/background/image 22.png" alt="user-icon">
+                    <img src="./images/background/image 23.png" alt="user-icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign up today and start selling immediately Irha-->
+        <div class="signup-today">
+            <div class="container">
+                <div>
+                    <p><b>Sign up Today and Start Selling Immediately!</b></p>
+                </div>
+                <div class="image-brands">
+                    <div class="reasons">
+                        <img src="./images/background/Group 4150 (1).png" alt="user-icon">
+                        <h5>Unlimited Products</h5>
+                    </div>
+                    <div class="reasons">
+                        <img src="./images/background/Group 4150.png" alt="user-icon">
+                        <h5>Unlimited Revenue</h5>
+                    </div>
+                    <div class="reasons">
+                        <img src="./images/background/Group 4151.png" alt="user-icon">
+                        <h5>Shop Profile</h5>
+                    </div>
+                    <div class="reasons">
+                        <img src="./images/background/Group 4152.png" alt="user-icon">
+                        <h5>Website Integration</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs Irha-->
+        <div class="faqs">
+            <div class="container">
+                <div>
+                    <h1>
+                        Frequently Asked by Retailers
+                    </h1>
+                </div>
+                <div class="questions">
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Why is this only for independent retailers?</summary>
+                        <div>
+                            We believe that independent UK High Street retailers are the lifeblood of the UK economy,
+                            and
+                            offer such a unique shopping experience that by bringing them together we can supply a
+                            shopping
+                            experience like no other for the customer while providing worthwhile revenue streams to help
+                            retailers thrive.
+                        </div>
+                    </details>
+                </div>
+                <div class="button">
+                    <a href="#"
+                        style="display: block; font-family: Poppins, sans-serif; font-size: 12px; margin-top:30px;text-transform: uppercase; text-decoration: none;">
+                        <button style="text-transform: uppercase;" class="heroBtn"> Start for free today</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Out Reviews -->
+        <div class="all-reviews">
+            <div class="border"></div>
+            <div class="container">
+                <div>
+                    <h2>Our Reviews</h2>
+                </div>
+                <div class="review">
+                    <div class="a-review">
+                        <h3>Forbes</h3>
+                        <p>Method saved the day! We were able to quickly integrate and provide a full experience to our
+                            users.</p>
+                    </div>
+                    <div class="a-review">
+                        <h3>The Daily Brit</h3>
+                        <p>Method saved the day! We were able to quickly integrate and provide a full experience to our
+                            users.</p>
+                    </div>
+                    <div class="a-review">
+                        <h3>Mirror</h3>
+                        <p>Method saved the day! We were able to quickly integrate and provide a full experience to our
+                            users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
