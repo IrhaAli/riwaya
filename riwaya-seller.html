@@ -696,6 +696,110 @@
             padding-left: 1.75em;
         }
 
+        /* What Our Sellers Are Saying About Us */
+
+        .what-sellers-saying {
+            margin-top: 100px;
+            background: #FAFAFA;
+            padding: 50px;
+        }
+
+        .what-sellers-saying .container .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .what-sellers-saying .container .top header {
+            width: 464.56px;
+            height: 97.38px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 125%;
+            display: flex;
+            align-items: center;
+            color: #1F2148;
+        }
+
+        .what-sellers-saying .container .top svg {
+            margin-top: 30px;
+            padding-right: 40px;
+        }
+
+        .what-sellers-saying .container .top p {
+            width: 440.01px;
+            height: 96.36px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #B36C1A 6.11%, #E8C35B 52.57%, #B36C1A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+
+        .what-sellers-saying .container .bottom .review-top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .what-sellers-saying .container .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .what-sellers-saying .bottom .review {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-evenly;
+        }
+
+        .what-sellers-saying .bottom .review .a-review {
+            border-width: 5px;
+            box-shadow: 47px 36px 64px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+        }
+
+        .what-sellers-saying .bottom .review .a-review:hover {
+            box-shadow: 0 0 60px rgba(33, 33, 33, 0.2);
+            transform: scale(1.25);
+        }
+
+        .what-sellers-saying .bottom .review .a-review p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #969696;
+        }
+
+        .what-sellers-saying .bottom .review .a-review h3 {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .what-sellers-saying .button {
+            text-align: center;
+        }
+
         /* Our Reviews Styling */
         .all-reviews {
             padding-top: 20px;
@@ -1474,7 +1578,69 @@
             </div>
         </div>
 
-        <!-- Out Reviews -->
+        <!-- What our sellers are saying -->
+        <div class="what-sellers-saying">
+            <div class="container">
+                <div class="top">
+                    <header>
+                        What Our Sellers Are Saying
+                        <svg width="146" height="55" viewBox="0 0 146 55" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M89.3597 49.2468C90.0246 48.8867 90.6951 48.8363 91.4209 48.9035C97.4768 49.4662 103.422 48.9174 109.28 47.243C116.218 45.2599 122.899 42.7547 128.908 38.6215C132.062 36.4536 135.126 34.1876 137.952 31.6034C138.273 31.3096 138.563 30.7847 139.063 30.9756C139.704 31.2187 139.417 31.8666 139.433 32.3488C139.471 33.5807 139.391 34.8189 139.5 36.0445C139.583 36.9676 140.427 37.7641 141.104 37.7519C142.031 37.7373 142.191 36.9727 142.423 36.3012C142.53 35.9961 142.631 35.6852 142.709 35.3716C143.59 31.8474 144.452 28.3183 145.351 24.7967C145.686 23.479 145.485 22.3297 144.424 21.4458C143.384 20.5791 142.271 20.801 141.149 21.3369C137.235 23.1998 133.31 25.0424 129.392 26.9042C128.867 27.1534 128.351 27.4374 127.883 27.7761C127.394 28.13 127.024 28.6184 127.242 29.275C127.466 29.9485 128.061 30.0642 128.669 30.0103C129.246 29.9602 129.814 29.8036 130.391 29.7423C131.006 29.674 131.601 29.3168 132.285 29.5586C132.18 30.2641 131.608 30.4944 131.177 30.8428C125.317 35.5797 118.761 39.0268 111.618 41.3476C107.18 42.79 102.686 44.0042 97.9743 44.0944C97.5642 44.1012 97.0545 44.3406 96.7705 43.6681C98.2826 41.9264 99.7033 40.0843 100.991 38.1366C108.377 26.9645 103.406 12.9935 93.0513 8.02173C90.8829 6.98077 88.689 5.97951 86.3486 5.47935C80.2418 4.17755 74.4192 5.09687 69.3101 8.7274C59.6202 15.6186 60.804 28.9967 65.3889 35.5016C68.8475 40.4123 73.6416 43.6625 79.1316 45.9349C80.0082 46.2982 80.9795 46.4478 81.8597 47.0584C81.5035 47.565 81.1778 47.6396 80.8761 47.7359C76.3387 49.1784 71.693 49.9588 66.9303 49.8076C56.2263 49.4651 46.093 46.7221 36.5035 42.0419C30.1888 38.9612 24.5528 34.7726 19.2862 30.1347C12.4348 24.0928 6.94085 17.027 3.62215 8.40496C2.82038 6.32469 2.18288 4.21891 2.90623 1.96706C3.04469 1.53623 3.29935 1.03636 2.74018 0.779386C2.13909 0.503615 1.79134 0.98134 1.50436 1.4302C1.18172 1.93194 1.05696 2.50283 0.952087 3.08086C0.705579 4.44519 0.783337 5.80203 1.09762 7.1405C2.54662 13.3103 5.31622 18.8747 9.21538 23.8084C17.8998 34.7895 28.5711 43.2834 41.4976 48.6843C50.7172 52.5391 60.3226 54.8167 70.4112 54.304C77.0734 53.9675 83.45 52.4586 89.3597 49.2468ZM87.8263 43.272C81.7869 41.9963 76.2415 39.7585 71.5479 35.5646C66.4882 31.044 64.8305 22.8717 67.9352 16.8889C69.6745 13.5376 72.455 11.3951 75.9908 10.329C79.855 9.16486 83.7495 9.0815 87.5834 10.6281C90.6045 11.8474 93.4877 13.265 95.7062 15.7617C96.6632 16.8391 97.3968 18.0502 97.8618 19.165C100.455 24.5478 100.334 29.6326 97.4404 34.6248C95.7008 37.625 93.5589 40.2744 90.8719 42.4748C89.966 43.2177 89.0216 43.5226 87.8263 43.272Z"
+                                fill="#1F2148" />
+                        </svg>
+                    </header>
+
+                    <p>
+                        Riwaya handles the hosting, SEO payments and new features. So you can focus on selling your
+                        products.
+                    </p>
+                </div>
+                <div class="middle">
+
+                </div>
+                <div class="bottom">
+                    <div class="review">
+                        <div class="a-review">
+                            <div class="review-top">
+                                <h3>Giddy Goat Toys Shope</h3>
+                                <p>Owner</p>
+                            </div>
+                            <p>Method saved the day! We were able to quickly integrate and provide a full experience to
+                                our users.Method saved the day! We were able to quickly integrate and provide a full
+                                experience to our users.</p>
+                        </div>
+                        <div class="a-review">
+                            <div class="review-top">
+                                <h3>Born Store </h3>
+                                <p>Owner</p>
+                            </div>
+                            <p>we had to send checks to pay our users' credit cards. Method has improved our user
+                                experience.we had to send checks to pay our users' credit cards. Method has improved our
+                                user experience.</p>
+                        </div>
+                        <div class="a-review">
+                            <div class="review-top">
+                                <h3>Azzediari Boutique</h3>
+                                <p>Owner</p>
+                            </div>
+                            <p>Our financial wellness offering lacked the ability to easily move money on behalf of our
+                                users.Our financial wellness offering lacked the ability to easily move money on behalf
+                                of our users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#"
+                    style="display: block; font-family: Poppins, sans-serif; font-size: 12px; margin-top:30px;text-transform: uppercase; text-decoration: none;">
+                    <button style="text-transform: uppercase;" class="heroBtn"> Start for free today</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Our Reviews -->
         <div class="all-reviews">
             <div class="border"></div>
             <div class="container">
